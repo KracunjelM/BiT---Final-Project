@@ -1,0 +1,50 @@
+@import "../../constans/variables.scss";
+
+.selectCandidate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: $color2;
+
+
+
+  > * {
+    width: 95%;
+  }
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-overflow: ellipsis;
+  }
+  div {
+    button {
+      cursor: pointer;
+
+      &:hover {
+        background-color: $btn-color;
+        border: 2px solid $color2;
+        color: $color2;
+      }
+    }
+  }
+
+  > :last-child {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    .msg {
+      color: red;
+      padding: 10px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .selectCandidate {
+    justify-content: flex-start;
+  }
+}

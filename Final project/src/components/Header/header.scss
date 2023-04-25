@@ -1,0 +1,137 @@
+@import "../../constans/variables.scss";
+.candidatesPage, .singleCandidatesPage{
+  padding: 120px 0;
+
+  .reportsAdministration{display: none};
+  .logInTitle{display: none};
+
+}
+.reportsPage, .createReportsPage{
+  padding: 120px 0;
+  .interviewsReports{display: none};
+  .logInTitle{display: none};
+}
+.loginPage{
+  .reportsAdministration{display: none};
+  .interviewsReports{display: none};
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color1;
+  padding: 0 30px;
+  z-index: 10;
+  
+
+  width: 100vw;
+  border-bottom: 2px solid $color2;
+
+  h1 {
+    color: $color2;
+    margin-bottom: 3px;
+
+  }
+  >div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 50%;
+    >.headerNavItem{
+      width: 120px;
+      min-width: 120px;
+      
+      &:hover {
+        color: $color2;
+      }
+
+    }
+}
+}
+@media screen and (max-width: 1100px) {
+  .candidatesPage, .singleCandidatesPage, .reportsPage, .createReportsPage{
+    padding: 120px 0;
+ 
+  }
+  .header>div{
+    .headerNavItem{
+      width: 45%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .candidatesPage, .singleCandidatesPage, .reportsPage, .createReportsPage{
+    padding: 120px 0;
+    .header{
+      height: 110px;
+    }
+
+  }
+  .createReportsPage{
+    padding: 120px 0;
+
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
+
+    }
+    >div{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+
+      >.headerNavItem{
+        width: 45%;
+      }
+  }
+}
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+    >div{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      >.headerNavItem{
+        width: 45%;
+ 
+      }
+    }
+  }
+}
+
+.headerNavItem {
+  border-radius: 10px;
+  background-color: $btn-color;
+  border: 1px solid $color2;
+  color: $color2;
+  width: 140px;
+  min-width: 100px;
+  text-align: center;
+  height: 28px;
+  padding: 0;
+  margin: 3px;
+}

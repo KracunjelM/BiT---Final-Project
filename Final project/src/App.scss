@@ -1,0 +1,24 @@
+@import "./constans/variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.app {
+  min-height: 100vh;
+  background-image: url(https://wallpaperaccess.com/full/877589.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  // color: $color2;
+}

@@ -1,0 +1,78 @@
+@import "../../constans/variables.scss";
+.searchWrapper{
+// position: fixed;
+width: 100%;
+display: flex;
+justify-content: center;
+  .search {
+    position: relative;
+    --size-button: 40px;
+ 
+    
+  }
+
+  .input1 {
+    padding-left: var(--size-button);
+  height: var(--size-button);
+  font-size: 15px;
+  border: none;
+  color: #fff;
+  outline: none;
+  width: var(--size-button);
+  transition: all ease 0.3s;
+  background-color: $color1;
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.showInput{
+  width: 200px;
+  cursor: text;
+  box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+}
+
+.input1:focus + .icon,
+.input1:not(:invalid) + .icon {
+  pointer-events: all;
+  cursor: pointer;
+}
+// width: 100%;
+  // padding: 0 40px;
+  // position: fixed;
+  // top: 70px;
+  // // right: 40px;
+
+
+  // .picture {
+  //   width: 25px;
+  //   height: 25px;
+  // }
+  // input {
+    //   padding: 7px;
+    //   margin-left: 5px;
+    //   border-radius: 10px;
+    //   width: 250px;
+  // }
+  
+  .search .icon {
+  position: absolute;
+  width: var(--size-button);
+  height: var(--size-button);
+  top: 0;
+  left: -4px;
+  padding: 8px;
+  pointer-events: none;
+}
+
+.search .icon svg {
+  width: 35px;
+  height: 25px;
+}
+
+.ionicon {
+  color: $color2;
+  width: 50px;
+  height: 50px;
+}
+}

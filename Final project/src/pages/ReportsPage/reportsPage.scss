@@ -1,0 +1,19 @@
+@import "../../constans/variables.scss";
+
+.reportsPage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  #btn-login {
+    display: none;
+  }
+  #btn-rep {
+    background-color: $color3;
+    border: 3px solid $color2;
+    height: 32px;
+  }
+
+
+}

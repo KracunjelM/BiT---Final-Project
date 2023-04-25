@@ -1,0 +1,50 @@
+@import "../../constans/variables.scss";
+
+.singleCandidatesPage {
+  .reports {
+    width: 95%;
+    background-color: $btn-color;
+    border: 1px solid $color2;
+
+    .eye {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+      width: 50px;
+      height: 40px;
+
+      button {
+        background-color: $btn-color;
+        border: none;
+
+        .viewBtn {
+          width: 30px;
+          background-color: $btn-color;
+          height: 20px;
+        }
+      }
+    }
+
+    > div {
+      display: flex;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 40px;
+        width: 34%;
+        border: 1px solid $color2;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .reports {
+      width: 100%;
+    }
+  }
+}

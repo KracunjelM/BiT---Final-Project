@@ -1,0 +1,20 @@
+@import "../../constans/variables.scss";
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: $color1;
+  color: $color2;
+  padding: 12px;
+  width: 100vw;
+  height: 50px;
+  border-top: 2px solid $color2;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    height: 50px;
+    padding: 18px;
+  }
+}

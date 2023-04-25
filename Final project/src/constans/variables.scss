@@ -1,0 +1,22 @@
+$color1: #2a2b38;
+$color2: #f5f5f5;
+$color3: #008080;
+$btn-color: #7395ae;
+@mixin card-design {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.75);
+  // border: 2px solid $color2;
+  background-color: $color1;
+  // border-radius: 10px;
+}
+
+@mixin big-text-size {
+  padding-bottom: 5px;
+  font-size: 26px;
+}
+
+@mixin small-text-size {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}

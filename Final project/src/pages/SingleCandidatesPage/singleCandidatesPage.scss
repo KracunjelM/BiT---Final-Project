@@ -1,0 +1,83 @@
+@import "../../constans/variables.scss";
+
+.singleCandidatesPage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0;
+
+  .info-div {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    height: 45vh;
+  }
+
+  img {
+    width: auto;
+    height: 30vh;
+  }
+
+  > h2 {
+    width: 95%;
+    margin: 20px;
+    @include big-text-size;
+  }
+  .table {
+    width: 95%;
+    background-color: #3f6179;
+    display: flex;
+    margin-bottom: 0;
+
+    > div {
+      padding: 10px;
+      width: 34%;
+      border: 1px solid $color2;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    img {
+      width: auto;
+    }
+
+    .info-div {
+      width: 80%;
+      height: 50vh;
+
+      .info {
+        max-height: 30vh;
+        margin: 5px 0 20px;
+      }
+    }
+
+    .table {
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    > h2 {
+      margin: 5px;
+    }
+
+    .info-div {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin: 5px 0;
+
+      .info {
+        width: 90%;
+
+        div {
+          > p {
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}

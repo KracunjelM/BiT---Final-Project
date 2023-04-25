@@ -1,0 +1,81 @@
+@import "../../constans/variables.scss";
+
+.card2 {
+  // width: 330px;
+  height: 400px;
+  background-color: $color1;
+  border-radius: 5px;
+  text-align: center;
+  color: #f0f0f0;
+  font-family: inherit;
+  // z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 20px;
+
+}
+
+.img {
+  margin: 40px auto 40px auto;
+  height: 70%;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+  font-size: 11px;
+  transition: all 0.5s;
+  background-color: #152f50;
+  overflow: hidden;
+
+}
+
+.heading-email{
+
+  
+  .email {
+    opacity: 0;
+    transition: all 0.5s;
+    word-break: break-all;
+  }
+  
+  .heading {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+svg {
+  padding: -1px 5px;
+  cursor: pointer;
+}
+
+.card2:hover .img {
+  transform: scale(1.1);
+  border: 1px solid #f0f0f0;
+}
+
+.card2:hover h1,
+.card2:hover p {
+  opacity: 1;
+}
+
+.click {
+  background-color: $color3;
+}
+
+@media screen and (max-width: 768px) {
+  .candidate {
+    width: 100%;
+    margin: 0 0 5px 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .candidate {
+    width: 100%;
+    margin-left: 20px;
+ 
+}
+}
+
+

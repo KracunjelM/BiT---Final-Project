@@ -1,0 +1,63 @@
+@import "../../constans/variables.scss";
+
+.selectCompany {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: $color2;
+  > * {
+    width: 95%;
+  
+  }
+  div {
+    .btn-msg {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+
+      .msg {
+        color: red;
+        padding: 10px;
+      }
+    }
+  }
+
+  .company {
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    color: $color2;
+
+    &:hover {
+      background-color: $color1;
+      transition: background-color 0.1s ease-out 10ms;
+      cursor: pointer;
+    }
+
+    &:hover {
+      background-color: $color3;
+    }
+
+    @include card-design;
+  }
+  .click {
+    background-color: $color3;
+  }
+  > :last-child {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    button {
+      cursor: pointer;
+
+      &:hover {
+        background-color: $btn-color;
+        border: 2px solid $color2;
+        color: $color2;
+      }
+    }
+  }
+}
